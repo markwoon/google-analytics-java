@@ -20,17 +20,17 @@ package com.brsanthu.googleanalytics;
  *
  * @author Santhosh Kumar
  */
-public class AppViewHit extends GoogleAnalyticsRequest<AppViewHit> {
-	public AppViewHit() {
+public class ScreenViewHit extends GoogleAnalyticsRequest<ScreenViewHit> {
+	public ScreenViewHit() {
 		this(null);
 	}
 
-	public AppViewHit(String contentDescription) {
+	public ScreenViewHit(String contentDescription) {
 		this(null, null, contentDescription);
 	}
 
-	public AppViewHit(String applicationName, String applicationVersion, String contentDescription) {
-		super("appview");
+	public ScreenViewHit(String applicationName, String applicationVersion, String contentDescription) {
+		super("screenview");
 		applicationName(applicationName);
 		applicationVersion(applicationVersion);
 		contentDescription(contentDescription);
