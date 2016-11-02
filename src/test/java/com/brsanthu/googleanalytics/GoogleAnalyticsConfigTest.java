@@ -11,7 +11,7 @@ public class GoogleAnalyticsConfigTest {
 		GoogleAnalyticsConfig config = new GoogleAnalyticsConfig();
 
 		assertEquals("googleanalytics-thread-{0}", config.getThreadNameFormat());
-		assertEquals(1, config.getMaxThreads());
+		assertEquals(10, config.getMaxThreads());
 		assertEquals("http://www.google-analytics.com/collect", config.getHttpUrl());
 		assertEquals("https://ssl.google-analytics.com/collect", config.getHttpsUrl());
 		assertEquals(80, config.getProxyPort());
