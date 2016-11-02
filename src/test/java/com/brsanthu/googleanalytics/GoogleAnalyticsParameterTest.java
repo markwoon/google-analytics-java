@@ -23,6 +23,8 @@ public class GoogleAnalyticsParameterTest {
 		assertParameter("aid", false, "text", null, 150, GoogleAnalyticsParameter.APPLICATION_ID);
 		
 		assertParameter("ds", false, "text", null, 0, GoogleAnalyticsParameter.DATA_SOURCE);
+		assertParameter("geoid", false, "text", null, 0, GoogleAnalyticsParameter.GEOID);
+		assertParameter("aiid", false, "text", null, 150, GoogleAnalyticsParameter.APPLICATION_INSTALLER_ID);
 	}
 	
 	public void testParametersOld() throws Exception {
